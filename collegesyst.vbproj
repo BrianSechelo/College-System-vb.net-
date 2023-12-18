@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{6B1266E8-F169-41D6-8C05-FB4A3660D00E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>collegesyst</RootNamespace>
+    <AssemblyName>collegesyst</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>collegesyst.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="ApplicationServices-Deployment" Order="1" xmlns="">
+          <Destination Path="Data Source=MOZILLA-PC\SQLEXPRESS%3bInitial Catalog=Driving%3bIntegrated Security=True" />
+          <Object Type="dbFullSql" Enabled="False">
+            <PreSource Path="Data Source=.\SQLEXPRESS%3bAttachDbFilename=|DataDirectory|\aspnetdb.mdf%3bIntegrated Security=True%3bUser Instance=True" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Debug\AutoScripts\ApplicationServices-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+          <Object Type="dbFullSql">
+            <Source Path="..\..\..\..\..\..\..\temp\collegesyst.sql" Transacted="False" />
+          </Object>
+        </ObjectGroup>
+        <ObjectGroup Name="DrivingConnectionString-Deployment" Order="2" xmlns="">
+          <Destination Path="Data Source=MOZILLA-PC\SQLEXPRESS%3bInitial Catalog=Driving%3bIntegrated Security=True" />
+          <Object Type="dbFullSql">
+            <PreSource Path="Data Source=MOZILLA-PC\SQLEXPRESS%3bInitial Catalog=Driving%3bIntegrated Security=True" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Debug\AutoScripts\DrivingConnectionString-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <DesktopBuildPackageLocation>D:\t7\collegesyst.zip</DesktopBuildPackageLocation>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>true</PublishDatabases>
+    <DeployIisAppPath>Default Web Site/unikdrivingschooll</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>collegesyst.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ADMIN PANEL.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="COLLEGE SYSTEM.aspx" />
+    <Content Include="Fees.aspx" />
+    <Content Include="Instructor.aspx" />
+    <Content Include="LICENSE.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Resources.aspx" />
+    <Content Include="SDetails.aspx" />
+    <Content Include="StudentsA.aspx" />
+    <Content Include="STUDENTSLIST.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Tables.aspx" />
+    <Content Include="UNIK.aspx" />
+    <Content Include="Update Fees.aspx" />
+    <Content Include="Users.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN PANEL.aspx.designer.vb">
+      <DependentUpon>ADMIN PANEL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN PANEL.aspx.vb">
+      <DependentUpon>ADMIN PANEL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COLLEGE SYSTEM.aspx.designer.vb">
+      <DependentUpon>COLLEGE SYSTEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE SYSTEM.aspx.vb">
+      <DependentUpon>COLLEGE SYSTEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="connectiondb.vb" />
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="online.Master.designer.vb">
+      <DependentUpon>online.Master</DependentUpon>
+    </Compile>
+    <Compile Include="online.Master.vb">
+      <DependentUpon>online.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skul.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>skul.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fees.aspx.designer.vb">
+      <DependentUpon>Fees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fees.aspx.vb">
+      <DependentUpon>Fees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor.aspx.designer.vb">
+      <DependentUpon>Instructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor.aspx.vb">
+      <DependentUpon>Instructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LICENSE.aspx.designer.vb">
+      <DependentUpon>LICENSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LICENSE.aspx.vb">
+      <DependentUpon>LICENSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources.aspx.designer.vb">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.aspx.vb">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDetails.aspx.designer.vb">
+      <DependentUpon>SDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SDetails.aspx.vb">
+      <DependentUpon>SDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentsA.aspx.designer.vb">
+      <DependentUpon>StudentsA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsA.aspx.vb">
+      <DependentUpon>StudentsA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STUDENTSLIST.aspx.designer.vb">
+      <DependentUpon>STUDENTSLIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTSLIST.aspx.vb">
+      <DependentUpon>STUDENTSLIST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="money.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>money.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tables.aspx.designer.vb">
+      <DependentUpon>Tables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tables.aspx.vb">
+      <DependentUpon>Tables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UNIK.aspx.designer.vb">
+      <DependentUpon>UNIK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UNIK.aspx.vb">
+      <DependentUpon>UNIK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update Fees.aspx.designer.vb">
+      <DependentUpon>Update Fees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update Fees.aspx.vb">
+      <DependentUpon>Update Fees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="skul.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>skul.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="money.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>money.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="online.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50129</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Login.aspx</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

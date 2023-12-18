@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="collegesyst.About" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>About.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.ChangePassword" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePassword.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.ChangePasswordSuccess" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePasswordSuccess.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Login" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAE=</HashCode>
+      <FileName>Account\Login.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Register" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\Register.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.AssignResources" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAcAAAAAAAAAAgAIAAAAAAEAAAAAAIAAAA=</HashCode>
+      <FileName>AssignResources.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Courses" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEAAAAAAAAAAAAAgAIAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Courses.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst._Default" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Default.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Fees" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEAAQAAAAAEAgAAgAIAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Fees.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Global_asax" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAEAAAAAAAAAAECIBQAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Instructor" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEAAAAAAAAEAgAAgAIAAQQAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Instructor.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Login1" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEAAAAAAAAAAAAAgAIAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Login.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Registration" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAgEIAgAEAAAEAgABgAIAAQQAAAAAAAAAIgAgA=</HashCode>
+      <FileName>Registration.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Resources" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEAAAAAAAAAAAAAgAIAAQQAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Resources.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Site" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEABAAAAAACABAACAAQAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Site.Master.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Tables" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAxDsAIACQcA8AAAAAAAIAAAA=</HashCode>
+      <FileName>Tables.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Update_Fees" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQAAAAAAAAAAgAIAAQQAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Update Fees.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.Users" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAgEAAgAEAAAEAggAgAIAAQAAAAAAAAAAIgAgA=</HashCode>
+      <FileName>Users.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.My.MyApplication" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>My Project\MyExtensions\MyWebExtension.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="collegesyst.My.MySettings" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="collegesyst.connectiondb" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAIgAAAgYAAQRAABBAEVCIARAAAAIGUwKIAAEAAY=</HashCode>
+      <FileName>connectiondb.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="collegesyst.My.MyWebExtension" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAAAAABBAAEgAEAAAAAAAAAgBgBAAAAgAAAAAAAA=</HashCode>
+      <FileName>My Project\MyExtensions\MyWebExtension.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="collegesyst.My.MySettingsProperty" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="collegesyst.My.Resources.Resources" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

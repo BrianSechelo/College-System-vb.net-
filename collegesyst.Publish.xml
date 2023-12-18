@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\testing" deleteExistingFiles="True" ftpAnonymousLogin="True" ftpPassiveMode="True" msdeploySite="collegesystem" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Profile1" publishMethod="MSDeploy" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Fees.aspx" publishTime="07/18/2014 10:38:13" />
+    <file relUrl="Tables.aspx" publishTime="07/16/2014 07:45:03" />
+    <file relUrl="Users.aspx" publishTime="07/14/2014 23:06:11" />
+    <file relUrl="COLLEGE SYSTEM.aspx" publishTime="07/16/2014 10:07:23" />
+    <file relUrl="Global.asax" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Registration.aspx" publishTime="07/18/2014 08:12:42" />
+    <file relUrl="Styles/Site.css" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Site.Master" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="About.aspx" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="bin/collegesyst.xml" publishTime="07/18/2014 12:27:20" />
+    <file relUrl="Update Fees.aspx" publishTime="07/17/2014 12:04:56" />
+    <file relUrl="STUDENTSLIST.aspx" publishTime="07/12/2014 18:07:29" />
+    <file relUrl="bin/collegesyst.dll" publishTime="07/18/2014 12:27:20" />
+    <file relUrl="Account/Web.config" publishTime="07/18/2014 12:27:25" />
+    <file relUrl="Instructor.aspx" publishTime="07/18/2014 10:55:39" />
+    <file relUrl="Account/Login.aspx" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="LICENSE.aspx" publishTime="07/18/2014 10:58:40" />
+    <file relUrl="Default.aspx" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Account/Register.aspx" publishTime="07/10/2014 19:41:07" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="07/10/2014 19:41:06" />
+    <file relUrl="Login.aspx" publishTime="07/14/2014 23:06:12" />
+    <file relUrl="Resources.aspx" publishTime="07/17/2014 12:42:42" />
+    <file relUrl="StudentsA.aspx" publishTime="07/14/2014 16:56:15" />
+    <file relUrl="Courses.aspx" publishTime="07/12/2014 18:42:42" />
+    <file relUrl="AssignResources.aspx" publishTime="07/14/2014 22:20:00" />
+    <file relUrl="SDetails.aspx" publishTime="07/18/2014 07:41:26" />
+    <file relUrl="bin/collegesyst.pdb" publishTime="07/18/2014 12:27:20" />
+    <file relUrl="Web.config" publishTime="07/18/2014 12:27:24" />
+    <file relUrl="UNIK.aspx" publishTime="07/17/2014 15:24:24" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="07/10/2014 19:41:07" />
+  </publishProfile>
+</publishData>
